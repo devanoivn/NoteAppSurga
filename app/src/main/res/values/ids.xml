@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="notesRecyclerView" type="id" />
+    <item name="addNotesButton" type="id" />
+    <item name="logoutButton" type="id" />
+    <item name="profileButton" type="id" />
+</resources>

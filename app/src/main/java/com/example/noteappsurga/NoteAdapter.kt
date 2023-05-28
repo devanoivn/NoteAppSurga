@@ -22,9 +22,9 @@ class NoteAdapter(private val context: Context) : ListAdapter<Note, NoteAdapter.
         val note = getItem(position)
         holder.bind(note)
 
-//        holder.itemView.setOnClickListener {
-//            openUpdateDeleteActivity(note)
-//        }
+        holder.itemView.setOnClickListener {
+            openUpdateDeleteActivity(note)
+        }
     }
 
     class NoteViewHolder(private val binding: ItemNoteBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -44,9 +44,9 @@ class NoteAdapter(private val context: Context) : ListAdapter<Note, NoteAdapter.
         }
     }
 
-//    private fun openUpdateDeleteActivity(note: Note) {
-//        val intent = Intent(context, UpdateDeleteActivity::class.java)
-//        intent.putExtra("noteId", note.id)
-//        context.startActivity(intent)
-//    }
+    private fun openUpdateDeleteActivity(note: Note) {
+        val intent = Intent(context, UpdateDeleteActivity::class.java)
+        intent.putExtra("noteId", note.id)
+        context.startActivity(intent)
+    }
 }
