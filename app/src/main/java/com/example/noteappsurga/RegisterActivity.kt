@@ -32,7 +32,7 @@ class RegisterActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Register successful, navigate to the main screen
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                     finish()
                 } else {
