@@ -18,6 +18,7 @@ class AddNotesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAddNotesBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         // Initialize Firebase Realtime Database
         database = FirebaseDatabase.getInstance().getReference("notes")

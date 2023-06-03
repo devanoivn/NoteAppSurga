@@ -17,6 +17,7 @@ class UpdateDeleteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityUpdateDeleteBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         // Initialize Firebase Realtime Database
         database = FirebaseDatabase.getInstance().getReference("notes")

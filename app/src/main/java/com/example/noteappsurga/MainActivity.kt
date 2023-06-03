@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         // Initialize Firebase Realtime Database
         database = FirebaseDatabase.getInstance().getReference("notes")
@@ -93,8 +94,6 @@ class MainActivity : AppCompatActivity() {
                 // Check if there are no notes
                 if (sortedNotes.isEmpty()) {
                     binding.addNotesButton.visibility = View.VISIBLE
-                } else {
-                    binding.addNotesButton.visibility = View.GONE
                 }
             }
 
