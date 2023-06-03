@@ -19,7 +19,8 @@
         android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter title" />
+        android:hint="Enter title"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/contentTextView"
@@ -34,7 +35,8 @@
         android:id="@+id/contentEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter content" />
+        android:hint="Enter content"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/updateButton"
